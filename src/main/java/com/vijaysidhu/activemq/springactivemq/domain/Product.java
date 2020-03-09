@@ -23,5 +23,12 @@ public class Product{
     @Version
     private Timestamp timestamp;
 
+    public Product() {
+    }
 
+    public Product(String description, Long size, boolean messageReceived){
+        this.description = description;
+        this.size = size;
+        this.messageReceived = messageReceived;
+    }
 }
